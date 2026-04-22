@@ -1,0 +1,7 @@
+result
+result-*
+build/
+.deps/
+lib/
+generated_code/
+rust-lib/target/
