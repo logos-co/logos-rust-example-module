@@ -1,0 +1,10 @@
+[package]
+name = "rust_caller"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+logos-rust-sdk = { path = "../logos-rust-sdk-src" }

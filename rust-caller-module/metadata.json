@@ -1,0 +1,29 @@
+{
+  "name": "rust_caller_module",
+  "version": "1.0.0",
+  "description": "Example Logos module that calls rust_provider_module via IPC using logos-rust-sdk",
+  "author": "Logos Core Team",
+  "type": "core",
+  "interface": "c-ffi",
+  "category": "general",
+  "main": "rust_caller_module_plugin",
+  "dependencies": ["rust_provider_module"],
+  "include": [],
+  "capabilities": [],
+
+  "codegen": {
+    "c_header": "lib/rust_caller.h"
+  },
+
+  "nix": {
+    "external_libraries": [],
+    "packages": {
+      "build": ["cargo", "rustc"],
+      "runtime": []
+    },
+    "cmake": {
+      "find_packages": [],
+      "extra_include_dirs": ["lib"]
+    }
+  }
+}

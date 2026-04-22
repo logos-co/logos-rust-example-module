@@ -2,6 +2,13 @@ result
 result-*
 build/
 .deps/
-lib/
-generated_code/
-rust-lib/target/
+
+# Per-module Rust build artifacts and staged libraries
+rust-provider-module/lib/
+rust-provider-module/generated_code/
+rust-provider-module/rust-lib/target/
+
+rust-caller-module/lib/
+rust-caller-module/generated_code/
+rust-caller-module/rust-lib/target/
+rust-caller-module/logos-rust-sdk-src
